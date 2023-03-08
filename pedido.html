@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+  <title>Pagina web</title>
+</head>
+<body>
+   <div style="margin: 24px;">
+   	<nav class="navbar navbar-inverse navbar-stick-top">
+   		<div class="container">
+   			<a class="navbar-brand" href="index.html">Inicio</a>
+   			 <ul class="nav navbar-nav">
+   			 	<li class="active">
+   			 		<a href="menu.html">Menu</a>
+   			 	</li>
+   			 	<li>
+   			 		<a href="formulario.html">Formulario</a>
+   			 	</li>
+   			 	<li>
+   			 		<a href="resultado.html">Resultado</a>
+   			 	</li>
+   			 	<li>
+   			 		<a href="contacto.html">Contacto</a>
+   			 	</li>
+   			 </ul>
+   		</div>
+    </nav>
+</div>
+
+ <h1>PEDIDO REALIZADO</h1>
+ <h3>con exito</h3>
+ 
+  <ul>
+ <p><strong>ㅤNombre: </strong><span id="nombre"></span></p>
+ <p><strong>ㅤApellido: </strong><span id="apellido"></span></p>
+ <p><strong>ㅤTelefono: </strong><span id="telefono"></span></p>
+ <p><strong>ㅤDireccion: </strong><span id="direccion"></span></p>
+ <p><strong>ㅤServilletas: </strong><span id="servilletas"></span></p>
+ <p><strong>ㅤTomate: </strong><span id="tomate"></span></p>
+ <p><strong>ㅤCebolla: </strong><span id="cebolla"></span></p>
+ <p><strong>ㅤNutela: </strong><span id="nutela"></span></p>
+ <p><strong>ㅤSexo: </strong><span id="sexo"></span></p>
+ <p><strong>ㅤMenu: </strong><span id="menu"></span></p>
+ 
+
+
+
+ <script type="text/javascript">
+  const orden=JSON.parse(localStorage.getItem("orden"));
+     document.getElementById("nombre").textContent=orden.nombre;
+     document.getElementById("apellido").textContent=orden.apellido;
+     document.getElementById("telefono").textContent=orden.telefono;
+     document.getElementById("direccion").textContent=orden.direccion;
+     document.getElementById("servilletas").textContent=orden.servilletas;
+     document.getElementById("tomate").textContent=orden.tomate;
+     document.getElementById("cebolla").textContent=orden.cebolla;
+     document.getElementById("nutela").textContent=orden.nutela;
+     document.getElementById("sexo").textContent=orden.sexo;
+     document.getElementById("menu").textContent=orden.menu;
+
+
+
+
+ </script>
+     </ul>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
